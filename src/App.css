@@ -1,5 +1,37 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+}
+
+.menu, .quiz , .score{
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu button , .quiz button ,.score button{
+  display: block;         /* จาก inline-block -> block */
+  width: 300px;
+  height: 50px;
+  margin: 8px auto;       /* จัดกลางแนวนอน */
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+button:active{
+  background: orange;
+  color: #fff;
 }
 
 .App-logo {
